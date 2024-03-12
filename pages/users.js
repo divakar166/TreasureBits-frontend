@@ -7,9 +7,15 @@ const UsersPage = () => {
 
     useEffect(() => {
         const fetchUsers = async () => {
-            const response = await fetch('/api/users/');
+            const response = await fetch('https://testt-back-1d3ffaa1ca20.herokuapp.com/',{
+                method:'GET',
+                headers:{
+                    'Content-Type':'application/json'
+                }
+            });
             if (response.ok) {
                 const data = await response.json();
+                console.log(data)
                 setUsers(data);
             }
         };
@@ -21,7 +27,7 @@ const UsersPage = () => {
             <h1>Users</h1>
             <ul>
                 {users.map(user => (
-                    <li key={user.id}>{user.username}</li>
+                    <li key={user.username}>{user.username},{user.email}</li>
                 ))}
             </ul>
         </div>

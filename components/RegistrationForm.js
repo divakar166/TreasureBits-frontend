@@ -9,15 +9,15 @@ const RegistrationForm = () => {
 
     const handleRegistration = async (e) => {
         e.preventDefault();
-        const response = await fetch('/api/register/', {
+        const response = await fetch('https://testt-back-1d3ffaa1ca20.herokuapp.com/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password, email })
         });
         if (response.ok) {
-            // Handle successful registration
+            console.log(response)
         } else {
-            // Handle registration error
+            console.log('error')
         }
     };
 
