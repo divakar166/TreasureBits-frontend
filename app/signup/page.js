@@ -27,12 +27,12 @@ export default function Signup(){
           <div className="py-1">
             <button className="w-full mb-2 text-white bg-blue-700 p-2 rounded-md text-sm">Sign Up</button>
           </div>
-          <div class="flex items-center justify-center">
-            <div class="w-1/3 h-px bg-gray-300"></div>
-            <div class="mx-4">
-              <p class="text-sm text-gray-500 font-semibold">or sign up with</p>
+          <div className="flex items-center justify-center">
+            <div className="w-1/3 h-px bg-gray-300"></div>
+            <div className="mx-4">
+              <p className="text-sm text-gray-500 font-semibold">or sign up with</p>
             </div>
-            <div class="w-1/3 h-px bg-gray-300"></div>
+            <div className="w-1/3 h-px bg-gray-300"></div>
           </div>
           <div className="flex justify-center items-center border-2 border-gray-200 rounded-md p-2 mt-2">
             <FcGoogle /> &nbsp;
