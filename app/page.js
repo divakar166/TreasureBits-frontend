@@ -1,3 +1,4 @@
+import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
@@ -7,8 +8,7 @@ export default function Home() {
       className=""
     >
       <Navbar />
-      Welcome
-      <Link href="/dashboard" >dashboard </Link>
+      <HomePage />
     </main>
   );
 }

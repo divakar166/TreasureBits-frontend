@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className="h-16 w-full fixed">
+    <nav className="h-16 w-full sticky">
       <div className='flex justify-between bg-white text-purple py-3 px-5 bg-opacity-75'>
         <div className="flex items-center justify-between w-[60%]">
           <Link href="/" className='px-5'>
