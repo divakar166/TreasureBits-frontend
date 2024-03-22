@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className="h-16 w-full sticky">
+    <nav className="h-16 w-full fixed">
       <div className='flex justify-between bg-white text-purple py-3 px-5 bg-opacity-75'>
         <div className="flex items-center justify-between w-[60%]">
           <Link href="/" className='px-5'>
@@ -25,7 +25,7 @@ function Navbar() {
         </div>
         <div className="flex justify-end items-center w-1/3  border-solid">
           <Link href="/signin" className='flex-end'>
-            <p className="px-3 mx-5 py-1 rounded-full text-purple-600 hover:bg-[#1e2838] hover:text-white bg-white">Sign in</p>
+            <p className="px-3 mx-5 py-1 rounded-full text-purple-600 hover:bg-purple-600 hover:text-white bg-white">Sign in</p>
           </Link>
         </div>
       </div>

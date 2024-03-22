@@ -6,5 +6,19 @@
   clip-path: polygon(75% 0, 100% 0%, 100% 100%, 20% 100%);
 }
 .clip-polygon-2 {
-  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 10% 100%);
+  clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Cabolafe';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Groundation Foundation.ttf') format('opentype');
+  }
+}
+
+.lead{
+  font-family: 'Cabolafe';
 }
