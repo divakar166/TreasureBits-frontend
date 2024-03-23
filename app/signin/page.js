@@ -42,7 +42,7 @@ export default function Signin(){
             <span>Sign in with google</span>
           </div>
           <div className="flex justify-center items-center mt-2">
-            <p>Don't have an account?</p>&nbsp;
+            <p>Don&apos;t have an account?</p>&nbsp;
             <span><Link href="/signup" className="underline text-purple-600">Register Here</Link></span>
           </div>
         </div>
