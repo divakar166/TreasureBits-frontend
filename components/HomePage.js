@@ -5,7 +5,7 @@ import Trending from './Trending';
 export default function HomePage() {
   return (
     <div className='h-[125vh] w-full flex flex-col'>
-      <div className='h-[85vh] flex'>
+      <div className='h-[85vh] flex mt-10'>
         <div className='w-2/5 h-[100%] flex justify-center items-center'>
           <Image src='/home.png' alt='home' width={500} height={180} />
         </div>

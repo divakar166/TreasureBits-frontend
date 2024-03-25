@@ -24,10 +24,23 @@ export default function Signup(){
     let email = e.target.email.value;
     let password = e.target.password.value;
     try{
-      const response = await axios.post('https://treasurebits-2e1eb182c3de.herokuapp.com/',{first_name,last_name,username,email,password})
-      console.log(response.data)
+      const response = await fetch('https://treasurebits-2e1eb182c3de.herokuapp.com/signup',{
+        method:"POST",
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body:JSON.stringify({first_name,last_name,username,email,password})
+      })
+      if (response.ok) {
+        const res = await response.json();
+        setMessage(res['message'])
+      } else {
+        const error = await response.json();
+        setMessage(error['message'])
+      }
     }catch(error){
-      console.log(error)
+      setMessage(error['message'])
+      console.error('Error during login :',error);
     }
   }
 
